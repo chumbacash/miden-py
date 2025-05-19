@@ -102,7 +102,7 @@ print(f"Note imported: {note.id}")
 ## Project Structure
 
 ```
-miden-py/
+miden-sdk/
 ├── miden_sdk/
 │   ├── __init__.py
 │   ├── client.py        # gRPC and WASM integration
