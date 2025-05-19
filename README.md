@@ -102,7 +102,7 @@ print(f"Note imported: {note.id}")
 ## Project Structure
 
 ```
-miden-py/
+miden-sdk/
 ├── miden_sdk/
 │   ├── __init__.py
 │   ├── client.py        # gRPC and WASM integration
@@ -152,9 +152,9 @@ This SDK is in alpha stage and compatible with Miden Testnet v6 (released Februa
 
 ## Resources
 
-- [Miden Documentation](https://0xmiden.github.io/miden-client/)
-- [Miden GitHub](https://github.com/0xPolygonMiden)
-- [Miden CLI](https://github.com/0xPolygonMiden/miden-client)
+- [Miden Documentation](https://0xmiden.github.io/miden-node/index.html)
+- [Miden GitHub](https://github.com/0xMiden)
+- [Miden Client](https://github.com/0xMiden/miden-client)
 - [npm SDK](https://www.npmjs.com/package/@demox-labs/miden-sdk)
 
 ## License
