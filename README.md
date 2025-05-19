@@ -1,6 +1,6 @@
-# Polygon Miden Python SDK
+# Miden Python SDK
 
-A Python SDK for interacting with the Polygon Miden blockchain, providing a Pythonic interface to Miden's core features without requiring Rust expertise.
+A Python SDK for interacting with the Miden blockchain, providing a Pythonic interface to Miden's core features without requiring Rust expertise.
 
 ![Miden](https://img.shields.io/badge/blockchain-Polygon%20Miden-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -8,7 +8,7 @@ A Python SDK for interacting with the Polygon Miden blockchain, providing a Pyth
 
 ## Overview
 
-Polygon Miden is a zkRollup secured by Ethereum and the AggLayer, offering privacy, client-side proving, parallel execution, and Turing-complete smart contracts. This SDK provides a Pythonic interface to Miden's core features:
+Miden is a zkRollup secured by Ethereum and the AggLayer, offering privacy, client-side proving, parallel execution, and Turing-complete smart contracts. This SDK provides a Pythonic interface to Miden's core features:
 
 - **Node Communication**: Interact with Miden nodes via gRPC
 - **Wallet & Account Management**: Create and manage private/public and mutable/immutable accounts
