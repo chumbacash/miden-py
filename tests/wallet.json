@@ -1,0 +1,10 @@
+{
+  "account_id": "0xabcdef1234567890",
+  "storage_mode": "private",
+  "mutable": true,
+  "keypair": {
+    "private_key": "private_key_for_0xabcdef1234567890",
+    "public_key": "public_key_for_0xabcdef1234567890"
+  },
+  "metadata": {}
+}
