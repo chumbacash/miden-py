@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="miden-py",
+    name="miden-sdk",
     version="0.1.0",
-    author="Polygon Miden Python SDK Team",
+    author="Miden Python SDK Team",
     author_email="example@example.com",
-    description="Python SDK for Polygon Miden blockchain",
+    description="Python SDK for Miden blockchain",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/miden-py",
+    url="https://github.com/chumbacash/miden-sdk",
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/miden-py/issues",
+        "Bug Tracker": "https://github.com/chumbacash/miden-sdk/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
