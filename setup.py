@@ -5,9 +5,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="miden-sdk",
-    version="0.1.0",
+    version="0.1.1",
     author="Miden Python SDK Team",
-    author_email="example@example.com",
+    author_email="amon@chumba.shop",
     description="Python SDK for Miden blockchain",
     long_description=long_description,
     long_description_content_type="text/markdown",

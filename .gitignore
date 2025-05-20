@@ -16,10 +16,19 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Book folder
 book/
@@ -33,6 +42,9 @@ env/
 ENV/
 .env
 .venv
+env.bak/
+venv.bak/
+pythonenv*
 
 # IDE - PyCharm
 .idea/
@@ -57,9 +69,21 @@ ENV/
 htmlcov/
 coverage.xml
 *.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
 # Documentation
 docs/_build/
+docs/generated/
 
 # Logs
 *.log
@@ -68,10 +92,27 @@ logs/
 # OS specific
 .DS_Store
 Thumbs.db
+.directory
+desktop.ini
 
 # Node (for npm)
 node_modules/
 package-lock.json
 
 # Local development settings
-local_settings.py 
+local_settings.py
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Generated files from examples
+examples/*.json
+examples/tx_*.json
+examples/wallet.json
+examples/public_wallet.json
+examples/sample_note.json
+examples/new_note.json
+
+# PyPI configuration
+.pypirc 

@@ -56,9 +56,8 @@ def main():
     print(f"Note type: {note.note_type}")
     print(f"Memo: {note.memo}")
     
-    # Add note to client's note store
-    print("\nAdding note to client's note store...")
-    client.add_note(note)
+    # Skip adding note to client's note store as it requires node connectivity
+    print("\nSkipping adding note to client's note store (requires node connectivity)")
     
     # Create a new note directly
     print("\nCreating a new note directly...")

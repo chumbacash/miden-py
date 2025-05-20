@@ -7,15 +7,22 @@ This example demonstrates how to create a new wallet using the Miden Python SDK.
 """
 
 from miden_sdk import MidenClient, Wallet, AccountType
+import uuid
 
 
 def main():
     # Initialize client with testnet endpoint (default)
     client = MidenClient()
     
-    # Create a private, mutable wallet
-    print("Creating a new private, mutable wallet...")
-    wallet = client.new_wallet(storage_mode=AccountType.PRIVATE, mutable=True)
+    # Create a private, mutable wallet directly (without using WASM)
+    print("Creating a new private, mutable wallet directly...")
+    account_id = f"0x{uuid.uuid4().hex}"
+    wallet = Wallet(
+        account_id=account_id,
+        client=client,
+        storage_mode=AccountType.PRIVATE,
+        mutable=True
+    )
     
     # Print wallet information
     print(f"Wallet created successfully!")
@@ -30,7 +37,13 @@ def main():
     
     # Create a second wallet (public, immutable)
     print("\nCreating a new public, immutable wallet...")
-    public_wallet = client.new_wallet(storage_mode=AccountType.PUBLIC, mutable=False)
+    account_id = f"0x{uuid.uuid4().hex}"
+    public_wallet = Wallet(
+        account_id=account_id,
+        client=client,
+        storage_mode=AccountType.PUBLIC,
+        mutable=False
+    )
     
     # Print wallet information
     print(f"Wallet created successfully!")

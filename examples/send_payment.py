@@ -43,23 +43,23 @@ def main():
     
     print(f"Transaction created with ID: {tx.id}")
     
-    # In a real scenario, we would generate a STARK proof
-    # This requires the miden-client binary to be installed and working
-    try:
-        print("Generating STARK proof (this may take some time)...")
-        tx.generate_proof()
-        print("Proof generated successfully!")
-        
-        # Submit transaction
-        print("Submitting transaction to the Miden node...")
-        tx_id = client.send_transaction(tx)
-        print(f"Transaction submitted with ID: {tx_id}")
-    except Exception as e:
-        print(f"Error: {str(e)}")
-        print("Saving transaction locally instead...")
-        tx_path = f"tx_{tx.id}.json"
-        tx.save(tx_path)
-        print(f"Transaction saved to {tx_path}")
+    # Skip proof generation since we don't have miden-client installed
+    print("Skipping STARK proof generation (requires miden-client binary)")
+    
+    # Save transaction locally
+    tx_path = f"tx_{tx.id}.json"
+    tx.save(tx_path)
+    print(f"Transaction saved to {tx_path}")
+    
+    # Print transaction details
+    print("\nTransaction details:")
+    print(f"  Type: {tx.data['type']}")
+    print(f"  Sender: {tx.data['sender']}")
+    print(f"  Recipient: {tx.data['recipient']}")
+    print(f"  Amount: {tx.data['amount']}")
+    print(f"  Asset ID: {tx.data['asset_id']}")
+    print(f"  Note Type: {tx.data['note_type']}")
+    print(f"  Memo: {tx.data['memo']}")
 
 
 if __name__ == "__main__":

@@ -25,7 +25,7 @@ cargo install miden-client
 
 2. Install the Python SDK:
 ```bash
-pip install miden-py
+pip install miden-sdk
 ```
 
 3. Download and place the WASM module:
